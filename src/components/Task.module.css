@@ -1,0 +1,86 @@
+.taskContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  height: 4.5rem;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.taskText {
+  width: 39.5rem;
+  font-size: 0.875rem;
+}
+
+.taskTextNew {
+  color: var(--gray-100);
+}
+
+.taskTextCompleted {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0.2rem;
+  cursor: pointer;
+  font: inherit;
+  width: 1.091rem;
+  height: 1.091rem;
+  border: 1px solid var(--blue-300);
+  border-radius: 999px;
+  background-color: var(--gray-500);
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]:hover {
+  border: 1px solid var(--blue-500);
+  transition: background-color 1s ease;
+}
+
+input[type="checkbox"]::before {
+  content: url('../assets/checkmark.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
+  width: 1.091rem;
+  height: 1.091rem;
+  border-radius: 999px;
+  background-color: var(--purple-500);
+  transform: scale(0);
+  border: none;
+  transition: background-color 1s transform ease;
+  transform-origin: center;
+}
+
+input[type="checkbox"]:hover::before {
+  background-color: var(--purple-300);
+  transition: background-color 1s ease;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.trashIcon {
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.trashIcon:hover {
+  color: var(--red-300);
+  background-color: var(--gray-400);
+  transition: background-color 1s transform ease;
+  border-radius: 4px;
+  padding: 0.2rem;
+}

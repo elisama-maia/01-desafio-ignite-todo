@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 46rem;
+  position: relative;
+}
+
+.formAddTasks {
+  width: 46rem;
+  
+  position: absolute;
+  top: -27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+  .formAddTasks {
+    flex-direction: column;
+  }
+}
+
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 15.25rem;
+  border-top: 1px solid var(--gray-400);
+}
+
+.emptyContainer p {
+  color: var(--gray-300);
+}
+
+.emptyContainer p:nth-of-type(1) {
+  font-weight: 700;
+  margin-top: 1rem;
+}

@@ -1,0 +1,14 @@
+.header {
+  min-height: 11.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--gray-700);
+  padding: 1.25rem 0;
+}
+
+.header img {
+  height: 3rem;
+}

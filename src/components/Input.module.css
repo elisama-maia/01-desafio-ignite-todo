@@ -1,0 +1,17 @@
+.input {
+  max-width: 39.875rem;
+  max-height: 3.375rem;
+  display: flex;
+  width: auto;
+  flex-grow: 1;
+  
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+  color: var(--gray-300);
+}
+
+.input:focus {
+  color: var(--gray-100);
+}

@@ -1,0 +1,27 @@
+.filterContainer {
+  max-width: 46rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+
+  margin-top: 5.688rem;
+  margin-bottom: 1.5rem;
+}
+
+.filterTitle {
+  color: var(--blue-300);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.filterCounter {
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 20px;
+  width: 1.563rem;
+  height: 1.188rem;
+  font-size: 0.75rem;
+}
