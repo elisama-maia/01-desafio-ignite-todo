@@ -1,11 +1,15 @@
 import { Main } from "./pages/Main";
+import { Header } from "./components/Header";
 
 import "./global.css";
 
 function App() {
 
   return (
-    <Main />
+    <>
+      <Header />
+      <Main />
+    </>
   )
 }
 
